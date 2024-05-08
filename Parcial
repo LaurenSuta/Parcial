@@ -1,0 +1,189 @@
+public class Camion extends Vehiculo {
+
+ private double CarroceriaAbierta;
+ private double CarroceriaCerrada;
+ private double CamionSencillo;
+ private double CamionDoble;
+ private int CapacidadCargaToneladas;
+ 
+ public Camion (double CarroceriaAbiera, double CarroceriaCerrada, double CamionSencillo, double CamionDoble, int CapacidadCargaToneladas) {
+     this.CarroceriaAbierta = CarroceriaAbierta;
+     this.CarroceriaCerrada = CarroceriaCerrada;
+     this.CamionSencillo = CamionSencillo;
+     this.CamionDoble = CamionDoble;
+     this.CapacidadCargaToneladas = CapacidadCargaToneladas;
+ 
+     private double CuotaMesGaraje;
+     
+     private void ImpuestoCirculacionYCuotaMesGaraje {
+    if (CamionSencillo){
+        double NuevaCuotaMesGaraje = this.getCuotaMesGaraje() * 0.075; 
+        this.setCuotaMesGaraje(NuevaCuotaGaraje);
+    }
+    if (CamionDoble) {
+        double NuevaCuotaMesGaraje = this.getCuotaMesGaraje() * 0.0125; 
+        this.setCuotaMesGaraje(NuevaCuotaGaraje);
+    }
+    
+    private double Camiones;
+    private double ImpuestoCirculacion;
+    if (Camiones){ {
+        
+        double NuevoImpuestoCirculacion = this.getImpuestoCirculacion() * 0.09;
+            this.setImpuestoCirculacion(nuevoImpuesto);
+    }  
+    int toneladas;
+   if (toneladas > 5 )
+       this.NuevoImpuestoCirculacion() + 10;
+ } 
+}
+public class Garaje implements iGarage {
+    private static final int numEspacios = 20; 
+    private Vehiculo[] espacios;   
+    
+    private double CamionDoble;
+    
+    //Constructor de la clase Garaje
+    public Garaje() {
+        this.espacios = new Vehiculo[numEspacios];
+        
+        public void agregarVehiculo(Vehiculo vehiculo, int espacio) {
+        if (espacio >= 0 && espacio < numEspacios) {
+            espacios[espacio] = vehiculo;
+        } else {
+            System.out.println("Espacio de garaje no válido.");
+        }
+        if (CamionDoble <= 3) { 
+          espacios[espacios] = vehiculo;
+        } else {
+            Sytem.out.println ("Espacio de garaje no válido");
+        }
+       
+     private double PosicionCamion;
+     if (espacio = 0){
+     (PosicionCamion = Auto)
+             System.out.println ("El espacio ha sido asignado a un Auto");
+     } else {
+     (PosicionCamion = Moto)
+     System.out.println ("El espacio no puede ser asignado a una Moto");
+ }
+ }    
+ }
+ }
+         public double calcularIngresos() {
+        double ingresosTotales = 0;
+        for (Vehiculo vehiculo : espacios) {
+            if (vehiculo != null) {
+                ingresosTotales += vehiculo.getCuotaMesGaraje();
+            }
+        }
+        return ingresosTotales;
+    }
+     public int calcularOcupacionPorTipoVehiculo(Vehiculo vehiculo) {
+        int cantidad = 0;
+        for (Vehiculo v : espacios) {
+            if (v != null && v.getClass().equals(vehiculo.getClass())) {
+                cantidad++;
+            }
+        }
+        return cantidad;
+}
+import java.util.Scanner;
+
+public class MenuGaraje {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Garaje garaje = new Garaje();
+        boolean salir = false;
+    
+    while (!salir) {
+            System.out.println("Menú de Gestión del Garaje:");
+            System.out.println("1.- Alquilar un espacio");
+            System.out.println("2.- Retirar vehículo");
+            System.out.println("3.- Consulta de ingresos mensuales");
+            System.out.println("4.- Consulta proporción autos / motos");
+            System.out.println("5.- Listado de matrículas y cuota mensual y tipo vehículo");
+            System.out.println("6.- Consulte cuantos camiones hay en el garaje");
+            System.out.println("7.- Consulte cuantos espacios para camiones hay disponibles");
+            System.out.println("8.- Salir");
+            System.out.print("Seleccione una opción: ");
+            int opcion = scanner.nextInt();
+            
+             switch (opcion) {
+                case 1:
+             //Para alquila un espacio
+                    break;
+                case 2:
+             //Para retirar un vehículo
+                    break;
+                case 3:
+             //Para consultar ingresos mensuales
+                    break;
+                case 4:
+             //Para consultar proporción autos / motos
+                    break;
+                case 5:
+             //Para listar matrículas y cuota mensual y tipo de vehículo
+                    break;
+                case 6:
+             //Para consultar cuantos camiones hay en el garaje
+                    break;
+                case 7;
+             //Para consultar cuantos espacios para camiones hay disponibles
+                    break; 
+                case 8:
+                    salir = true;
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Por favor, seleccione una opción del 1 al 8.");
+                    break;
+            }
+        }
+        scanner.close();
+    }
+}
+private static void alquilarEspacio(Garaje garaje, Scanner scanner) {
+        System.out.print("Introduce la marca del vehículo: ");
+        String marca = scanner.next();
+
+        System.out.print("Introduce el precio del vehículo: ");
+        double precio = scanner.nextDouble();
+
+        System.out.print("Introduce el cilindraje del vehículo: ");
+        int cilindraje = scanner.nextInt();
+
+        System.out.print("¿Tiene matrícula? (true/false): ");
+        boolean tieneMatricula = scanner.nextBoolean();
+
+        if (!tieneMatricula) {
+            System.out.println("No se puede alquilar un vehículo sin matrícula.");
+            return;
+        }
+        System.out.println ("Es un camion doble o un auto?:")
+        boolean.CamionDoble = scanner.NextBoolean ();
+        if (garaje.CamionDoble>3) {
+        System.out.println ("No hay espacio suficiente para un camion doble");
+        }
+
+private double TieneMoto; {
+
+System.out.println ("¿Tiene Moto? (true/false:");
+boolean TieneMoto = scanner.nextBoolean ();
+if (TieneMoto){
+System.out.println ("No es posible asignarse en las primeras ubicaciones");
+}
+}
+
+//Comprobar si supera el limite de ocupacion por motos
+        if (garaje.calcularProporcionMotos() >= 0.8) {
+            System.out.println("Se supera el límite de ocupación por motos en el garaje.");
+            return;
+        }
+
+        // Se alquila el espacio en el garaje
+        Vehiculo vehiculo = new Vehiculo(marca, precio, cilindraje);
+        garaje.agregarVehiculo(vehiculo);
+        System.out.println("Vehículo alquilado correctamente.");
+    }
+}
